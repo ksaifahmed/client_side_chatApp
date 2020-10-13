@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Pending Clients"
+        android:id="@+id/unreg_clients_options"
+        app:showAsAction="never"
+        >
+    </item>
+
+
+    <item
+        android:title="Settings"
+        android:id="@+id/main_settings_option"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/main_logout_option"
+        app:showAsAction="never"
+        >
+    </item>
+
+</menu>

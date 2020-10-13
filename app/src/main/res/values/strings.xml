@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Oroddho: Peers</string>
+    <string name="app_org">Oroddho</string>
+    <string name="gmail">\@gmail.com</string>
+    <string name="emptyListText">List is Empty</string>
+    <string name="NoPending">No Pending Users</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

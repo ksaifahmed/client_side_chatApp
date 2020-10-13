@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0EC99A"
+    app:subtitle="Peers"
+    app:subtitleTextColor="#FFFFFF"
+    app:title="Oroddho"
+    app:titleTextColor="#FFFFFF">
+
+</android.support.v7.widget.Toolbar>

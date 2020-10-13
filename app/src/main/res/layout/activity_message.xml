@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MessageActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/messageToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:subtitle="last seen"
+        app:subtitleTextColor="@color/colorAccent"
+        app:title="ksaifahmed"
+        app:titleTextColor="@color/colorAccent" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageToolbar"
+            android:id="@+id/refresh_layout"
+            android:layout_above="@+id/message_bar_main"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messages_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_bar_main"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider"
+                >
+            </View>
+
+
+            <LinearLayout
+                android:id="@+id/message_nav_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_field"
+                    android:layout_width="280dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/roundedinputfield"
+                    android:hint=" Type message"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:layout_width="38dp"
+                    android:layout_height="44dp"
+                    android:id="@+id/sendbutton"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sendmessagebutton" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
